@@ -1,0 +1,111 @@
+.tours-hero {
+    margin: 50px auto;
+    max-width: 980px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+    url(../images/tour/tours-header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    p {
+        color: $white;
+        font-size: 60px;
+        font-family: Proxima;
+    }
+}
+
+.tours {
+    margin: 50px auto;
+    max-width: 818px;
+    // height: 1022px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    .promo {
+        padding: 37px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 304px;
+        width: 236px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: $white;
+        font-family: Proxima;
+        overflow: hidden;
+        white-space: nowrap;
+        .country {
+          font-size: $large-text;
+        }
+        .price {
+            font-size: 30px;
+        }
+        button {
+          margin-top: 57px;
+          height: 40px;
+          width: 133px;
+          border-radius: 50px;
+          color: $white;
+          background-color: $site-blue;
+          border: none;
+          font-family: Gill;
+          font-weight: bold;
+          font-size: 15px;
+          a {
+            text-decoration: none;
+            color: $white;
+          }
+        }
+      }
+      .tour1 {
+        background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+          url(../images/tour/tour-01.jpg);
+      }
+      .tour2 {
+        background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+          url(../images/tour/tour-02.jpg);
+      }
+      .tour3 {
+        background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+          url(../images/tour/tour-03.jpg);
+      }
+      .tour4 {
+        background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+          url(../images/tour/tour-04.jpg);
+      }
+      .tour5 {
+        background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+          url(../images/tour/tour-05.jpg);
+      }
+      .tour6 {
+        background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+          url(../images/tour/tour-06.jpg);
+      }
+      .tour7 {
+        background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+          url(../images/tour/tour-07.jpg);
+      }
+      .tour8 {
+        background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+          url(../images/tour/tour-08.jpg);
+      }
+      .tour9 {
+        background-image: linear-gradient(to right, $overlay-black, $overlay-black),
+          url(../images/tour/tour-09.jpg);
+      }
+}
+
+@media only screen and (max-width: 900px) {
+  .tours {
+    max-width: 700px;
+    grid-gap: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+}

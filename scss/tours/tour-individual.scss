@@ -1,0 +1,108 @@
+.tour-container {
+    margin: 0 auto;
+    max-width: 980px;
+    .tour-hero{
+        width: 100%;
+        height: 413px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 50px auto auto auto;
+        position: relative;
+        .tour-header {
+            color: $white;
+            padding-left: 30px;
+            padding-top: 18px;
+            font-size: $large-text;
+            font-family: Proxima;
+        }
+        .tour-price {
+            color: $white;
+            font-size: 30px;
+            font-family: Proxima;
+            p {
+                margin-bottom: 0px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+    .preview-images {
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .preview {
+            width: 298px;
+            height: 347px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    }
+    .days {
+        max-width: 980px;
+        // width: 100%;
+        margin-top: 30px;
+        .day {
+            margin-bottom: 70px;
+            .day-heading {
+                font-family: Proxima;
+                font-size: $large-text;
+            }
+            hr {
+                background-color: black;
+                height: 3px;
+                width: 130px;
+                margin-top: -22px;
+                margin-bottom: 30px;
+            }
+            .day-text {
+                font-family: Gill;
+                font-size: 16px;
+            }
+        }
+    }
+    .tour-book-button {
+        display: flex;
+        justify-content: center;
+        .tour-book {
+            background-color: $site-blue;
+            text-align: center;
+            color: $white;
+            font-family: Gill;
+            font-size: 15px;
+            width: 133px;
+            height: 40px;
+            border-radius: 50px;
+            border: none;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 950px) {
+    .tour-container {
+        .preview-images {
+            flex-direction: column;
+            align-items: center;
+            .preview {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    .days {
+        width: 90%;
+        margin: 30px auto 0 auto;
+        .day {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .day-text {
+                text-align: center;
+            }
+        }
+    }
+}
+  

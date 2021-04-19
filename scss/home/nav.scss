@@ -1,0 +1,50 @@
+nav {
+  max-width: 980px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: $white solid 2px;
+
+  .logo {
+    width: 92px;
+    height: 42px;
+  }
+  .links {
+    width: 542px;
+    height: 42px;
+    align-self: center;
+    display: flex;
+    a {
+      text-decoration: none;
+      color: $white;
+      margin: auto;
+      font-family: Gill;
+      font-size: 15px;
+      border-right: 1px solid $site-blue;
+      padding-right: 20px;
+      float: right;
+    }
+    .no-border {
+      padding-right: 0px;
+      border: none;
+      margin-right: 0px;
+    }
+  }
+}
+
+.other {
+  margin-top: 30px;
+  border-color: black;
+  .links {
+    a {
+      color: black;
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  nav {
+    width: 90%;
+  }
+}

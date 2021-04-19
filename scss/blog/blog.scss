@@ -1,0 +1,68 @@
+.blogs {
+  max-width: 980px;
+  margin: 50px auto;
+  .blog-title {
+    div {
+      font-family: Proxima;
+      font-size: 30px;
+      width: 80px;
+      border-bottom: 2px solid black;
+    }
+  }
+  .blog {
+    margin-top: 75px;
+    width: 100%;
+    display: flex;
+    .blog-date {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 60px;
+      height: 60px;
+      background-color: $site-blue;
+      .blog-day {
+        color: $white;
+        font-family: GillBold;
+        font-size: 22px;
+        margin-bottom: 0px;
+      }
+      .blog-month {
+        color: $white;
+        font-family: GillLight;
+        font-size: 12px;
+        margin-bottom: 0px;
+      }
+    }
+    .blog-content {
+      margin-left: 20px;
+      width: 900px;
+      .blog-image {
+        max-width: 900px;
+        height: 259px;
+        background-image: url(../images/blog.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .blog-heading {
+        margin-top: 20px;
+        font-family: Gill;
+        font-size: 15px;
+      }
+      .blog-text {
+        margin-top: 10px;
+        width: 380px;
+        font-family: Gill;
+        font-size: 13px;
+        color: $site-blue;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .blogs {
+    width: 90%;
+  }
+}

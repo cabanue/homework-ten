@@ -1,0 +1,128 @@
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+  .about-section {
+    margin-top: 90px;
+    width: 100%;
+    .about-heading {
+      font-size: $large-text;
+      font-family: Proxima;
+    }
+    hr {
+      background-color: black;
+      height: 4px;
+      width: 140px;
+      margin-top: -30px;
+      margin-bottom: 36px;
+    }
+    .about-text {
+      font-size: 16px;
+      font-family: Gill;
+    }
+  }
+  .clients {
+    display: flex;
+    flex-direction: column;
+    margin-top: 95px;
+    width: 100%;
+    .clients-heading {
+      font-size: 40px;
+      font-family: Proxima;
+    }
+    hr {
+      background-color: black;
+      height: 4px;
+      width: 190px;
+      margin-top: -22px;
+    }
+    .client {
+      max-width: 676px;
+      min-height: 150px;
+      display: flex;
+      margin-top: 40px;
+      .image {
+        height: 150px;
+        width: 260px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        img {
+          width: auto;
+          height: 100%;
+        }
+      }
+      .client-1 {
+        background-image: url(../images/clients/about-client-01.jpg);
+      }
+      .client-2 {
+        background-image: url(../images/clients/about-client-02.jpg);
+      }
+      .client-text {
+        position: relative;
+        min-height: 50px;
+        width: 385px;
+        margin-left: 25px;
+        .quote {
+          font-family: GillItalic;
+          font-size: 16px;
+        }
+        .name {
+          font-family: Proxima;
+          font-size: 20px;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+    .client:last-child {
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    .about-section {
+      text-align: center;
+      hr {
+        margin: -30px auto 30px auto;
+      }
+    }
+    .clients {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .clients-heading {
+        text-align: center;
+      }
+      .client {
+        flex-direction: column;
+        align-items: center;
+        min-height: 350px;
+        .image {
+          height: 250px;
+          width: 385px;
+        }
+        .client-text {
+          margin-top: 20px;
+          margin-left: 0px;
+          .quote {
+            text-align: center;
+          }
+          .name {
+            position: relative;
+            text-align: center;
+          }
+        }
+      }
+      .client:last-child {
+        margin-bottom: 80px;
+      }
+    }
+  }
+}
